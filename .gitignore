@@ -4,4 +4,3 @@ releaseNotes.md
 *.asv
 createImgFromRawData.m
 functions/*.m
-functions_pcode/
