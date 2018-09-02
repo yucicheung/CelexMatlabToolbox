@@ -21,7 +21,7 @@ Y=640;
 upperADC=511;
 lowerADC=0;
 bytesPerEvent=4;
-timeResolution=40; %ns
+timeResolution=4e-5; %ms
 %% Convert all events to pixels in format [x,y,a,t] and save as mat in memory-efficient way
 binName='Recording_20180705_124529343_E_25MHz_tennis_thresh40.bin';
 binDir='D:/03DVS_BinFile/ver2_1/classifiedBin';
@@ -77,6 +77,10 @@ showDenoisedBinaryComparison(events,eventDelta,displayTime)
 % showDenoisedGrayComparison(events,eventDelta,displayTime)
 
 %% Accumulate Pic  by timeInterval
-timeDelta=1e-5;
-displayTime=1e-11;
-showAllPicAccumulatedByTimeInteval( events,timeDelta,displayTime );
+timeDelta=0.1;  % ms
+displayTime=25; % ms
+startPer=0.2;  % percent of index to start
+endPer=0.3;     % percent of index to end
+skipPic=5000;   % num of skipped pics from the start index under order of "timeDelta"
+
+showBinaryPicByTimeInteval(events,timeDelta,displayTime,startPer,endPer,skipPic);

@@ -10,7 +10,7 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
     - Real-time showing and saving binary pics from raw data.
     - Real-time showing and saving gray pics from raw data..
     - Real-time showing and saving accumulated gray pics from raw data..
-  -  `functions`: a collection of matlab functions.
+  - `functions`: a collection of matlab functions.
     - Decode from raw data(`.bin` file) in batches and return events in format of `x,y,adc,t`，where `t`  is the **continuous time stamp**.
     - Save decoded events as mat file in memory-efficient way.
     - Load events from mat file.
@@ -20,6 +20,7 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
     - Show and save denoised binary pics from events.
     - Show and save denoised gray pics from events.
     - Display 3D events flow from events.
+    - Accumulate frames by specified time interval in certain range (in percentage), and user can skip the first specified amount of frames if needed and also determine the time for each frame to show.
   - `demo.m`
     - An executable demo file, which includes all sample usage to call the functions in folder `functions`.
 
@@ -82,3 +83,10 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
 | Prototype                    | Description                                                  |
 | :--------------------------- | :----------------------------------------------------------- |
 | `showEventsFlow3D( events )` | Dynamically show the 3D events flow based on the input `events`struct. |
+
+- **Accumulate frames by specified time interval**
+
+| **Prototype**                                                | **Description**                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| `showBinaryPicByTimeInteval(events,timeDelta,`<br>`displayTime,startPer,endPer,skipPic)` | Based on `events`, the function form each frame by `timeDelta`(ms) in events slice ranging in` [startPer,endPer] `(in percentage).User can skip the first `skipPic` pics. Showing time for each frame is `displayTime`(ms). |
+

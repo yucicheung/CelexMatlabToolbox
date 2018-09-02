@@ -4,3 +4,4 @@ releaseNotes.md
 *.asv
 createImgFromRawData.m
 functions/*.m
+*.mlx

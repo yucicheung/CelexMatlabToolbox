@@ -11,7 +11,7 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
   - Real-time showing and saving binary pics from raw data.
   - Real-time showing and saving gray pics from raw data.
   - Real-time showing and saving accumulated gray pics from raw data.
--  `functions`: a collection of matlab functions.
+- `functions`: a collection of matlab functions.
   - Decode from raw data(`.bin` file) in batches and return events in format of `x,y,adc,t`，where `t`  is the **continuous time stamp**.
   - Save decoded events as mat file in memory-efficient way.
   - Load events from mat file.
@@ -21,6 +21,7 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
   - Show and save denoised binary pics from events.
   - Show and save denoised gray pics from events.
   - Display 3D events flow from events.
+  - Accumulate frames by specified time interval in certain range (in percentage), and user can skip the first specified amount of frames if needed and also determine the time for each frame to show.
 - `demo.m`
   - An executable demo file, which **includes all sample usage to call the functions in folder `functions`.**
 
@@ -47,10 +48,10 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
 
 ## TODO
 
+- [x] Visualizing by accumulating events through a specified time interval.
 - [ ] Take spatial connection  into consideration to improve denoising results.
 - [ ] Take FPN into consideration to improve denoising results.
 - [ ] Add `overlap` parameter for visualizing.
-- [ ] Visualizing by accumulating events through a specified time interval.
 
 ## LICENSE
 
