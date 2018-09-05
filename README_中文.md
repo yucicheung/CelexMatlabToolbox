@@ -37,6 +37,10 @@ CelexMatlabToolbox是针对Celex IV的采集数据进行处理的Matlab工具箱
 
 ![三维事件流展示](pics/eventFlow3D.gif)
 
+- **变速回放**
+
+![](pics/playback_with_different_timeslice.gif)
+
 ## 使用说明
 
 - 使用前
