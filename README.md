@@ -36,10 +36,6 @@ CelexMatlabToolbox is a matlab toolbox to process the events collected using Cel
 
 ![三维事件流展示](pics/eventFlow3D.gif)
 
-- **Accumulated frames with different timeslice**
-
-![playback](pics/playback_with_different_timeslice.gif)
-
 ## Usage
 
 - Before you use

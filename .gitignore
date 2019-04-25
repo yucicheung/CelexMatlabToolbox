@@ -1,7 +1,4 @@
 *.mat
-Notes.md
-releaseNotes.md
 *.asv
-createImgFromRawData.m
-functions/*.m
+*.xlsx
 *.mlx

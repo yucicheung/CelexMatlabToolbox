@@ -77,10 +77,10 @@ showDenoisedBinaryComparison(events,eventDelta,displayTime)
 % showDenoisedGrayComparison(events,eventDelta,displayTime)
 
 %% Accumulate Pic  by timeInterval
-timeDelta=10;  % ms
+timeDelta=0.1;  % ms
 displayTime=25; % ms
 startPer=0.2;  % percent of index to start
 endPer=0.3;     % percent of index to end
-skipPic=0;   % num of skipped pics from the start index under order of "timeDelta"
+skipPic=5000;   % num of skipped pics from the start index under order of "timeDelta"
 
 showBinaryPicByTimeInteval(events,timeDelta,displayTime,startPer,endPer,skipPic);
